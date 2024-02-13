@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- import berkas css -->
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+
+    <!-- Embedded Style Sheet -->
+    <style>
+        h2{
+            color: blue;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>Kota Lhokseumawe</h1>
+    <h2>Kota Bireuen</h2>
+    <!-- Inline Style -->
+    <h3 style="color: cadetblue; margin: 2em">Kota Takengon</h3>
+
+    <!-- Inheritance -->
+</header>
+<main>
+  <h2>Lorem Ipsum</h2>
+
+  <article>
+    <h3>Lorem, ipsum dolor.</h3>
+    <p>
+      Pellentesque venenatis mi sit amet erat tincidunt auctor. Curabitur tincidunt tellus ac
+      convallis dictum. Morbi luctus leo eget leo luctus elementum. Cras at ligula eu elit
+      blandit venenatis.
+    </p>
+  </article>
+</main>
+  </body>
+</html>
+
+<!-- Type Selector -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Judul Dokumen</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <span>
+      Ini merupakan sebuah teks yang berada pada elemen span. Seharusnya elemen
+      ini ditampilkan dengan warna teks merah.
+    </span>
+    <p>
+      Ini merupakan sebuah teks yang berada pada elemen paragraf, teks ini tidak
+      seharusnya tidak akan terpengaruh oleh rule.
+    </p>
+    <span>
+      Ini merupakan sebuah teks yang berada pada elemen span lainnya. Seharusnya
+      elemen ini ditampilkan dengan warna teks merah juga.
+    </span>
+  </body>
+</html>
+
+<!-- Class Selector -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Judul Dokumen</title>
+    
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <p class="red">Paragraf dengan teks berwarna merah</p>
+    <p class="skyblue-bg">Paragraf dengan background berwarna biru langit</p>
+    <p class="fancy">Paragraf dengan gaya fancy</p>
+    <p>
+      Paragraf yang menampilkan teks dengan warna standar tanpa menerapkan
+      styling
+    </p>
+  </body>
+</html>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Judul Dokumen</title>
+    
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 class="fancy">Heading dengan teks bergaya fancy</h1>
+    <p class="fancy">Paragraf dengan teks bergaya fancy</p>
+  </body>
+</html>
+
+<!-- ID Selector -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Judul Dokumen</title>
+    
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="special">
+      <p>Ini merupakan konten di dalam sebuah div yang diberi id special.</p>
+    </div>
+    <div>
+      <p>Ini merupakan konten di dalam sebuah div biasa.</p>
+    </div>
+  </body>
+</html>
+
+<!-- Attribute Selector -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Judul Dokumen</title>
+    
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <ul>
+      <ul>
+        <li><a href="#internal">Internal link</a></li>
+        <li><a href="http://example.com">Example link</a></li>
+        <li><a href="#InSensitive">Insensitive internal link</a></li>
+        <li><a href="http://example.org">Example org link</a></li>
+      </ul>
+    </ul>
+  </body>
+</html>
+
+<!-- Universal Selector -->
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Judul Dokumen</title>
+    
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <p>
+      Ini merupakan paragraf biasa atau tidak menerapkan atribut apapun. Maka
+      teks pada paragraf ini akan berwarna hijau
+    </p>
+    <p lang="en-us">
+      This is an English paragraph contains en-us value of lang attribute, so
+      this text will be green and italic.
+    </p>
+
+    <h1>Ini merupakan sebuah header biasa</h1>
+    <h1 lang="en-us">This is an English Header</h1>
+
+    <p class="warning">
+      Perhatikan paragraf ini! Paragraf ini merupakan paragraf yang memiliki
+      kelas bernilai warning, sehingga teks dari paragraf ini akan berwarna
+      merah
+    </p>
+
+    <div id="content">
+      <p>
+        Ini merupakan sebuah teks di dalam sebuah div yang memiliki id bernilai
+        "content", seharusnya paragraf ini dibungkus dalam border yang memiliki
+        padding 20px
+      </p>
+    </div>
+  </body>
+</html>
+
+<!-- Adjacent Sibling Selector (+) -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Judul Dokumen</title>
+    
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <p>
+      Ini merupakan paragraf pertama. Rule styling tidak akan diterapkan pada
+      elemen paragraf ini.
+    </p>
+    <img
+      src="https://raw.githubusercontent.com/dicodingacademy/a123-webdasar-labs/099-shared-files/shared-media/g-dicoding-logo.png"
+      alt="g Dicoding Logo"
+      width="400px"
+    />
+    <p>
+      Ini merupakan paragraf kedua dan ditetapkan setelah elemen gambar. Maka
+      paragraf ini seharusnya menerapkan rule dengan menampilkan teks berwarna
+      hijau.
+    </p>
+    <p>
+      Ini merupakan paragraf ketiga. Letaknya memang setelah elemen gambar,
+      Namun, tidak diletakkan persis setelahnya, sehingga rule tidak akan
+      diterapkan pada elemen ini.
+    </p>
+  </body>
+</html>
+
+<!-- General Sibling Selector (~) -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Judul Dokumen</title>
+    
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <p>
+      Ini merupakan paragraf pertama. Rule styling tidak akan diterapkan pada
+      elemen paragraf ini.
+    </p>
+    <img
+      src="https://raw.githubusercontent.com/dicodingacademy/a123-webdasar-labs/099-shared-files/shared-media/g-dicoding-logo.png"
+      alt="Logo Dicoding"
+      width="400px"
+    />
+    <p>
+      Ini merupakan paragraf kedua dan ditetapkan setelah elemen gambar. Maka
+      paragraf ini menerapkan rule dengan menampilkan teks berwarna hijau.
+    </p>
+    <div>
+      <p>
+        Ini merupakan paragraf ketiga, letaknya setelah elemen gambar, tetapi
+        paragraf ini dibungkus di dalam div sehingga paragraf ini tidak akan
+        menerapkan rule styling karena tidak memiliki induk yang sama.
+      </p>
+    </div>
+    <p>
+      Ini merupakan paragraf empat. Letaknya memang setelah elemen gambar dan
+      memiliki induk yang sama seperti elemen gambar, sehingga elemen ini akan
+      menerapkan rule dengan menampilkan teks berwarna hijau.
+    </p>
+  </body>
+</html>
+
+<!-- Child Selector (>) -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Judul Dokumen</title>
+    
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div>
+      <p>Paragraf pertama. di dalam div.</p>
+      <p>Paragraf kedua. di dalam div.</p>
+      <section>
+        <p>
+          Paragraf ketiga. di dalam div Namun, bukan sebagai anak elemen secara
+          langsung.
+        </p>
+      </section>
+      <p>Paragraf keempat. di dalam div.</p>
+    </div>
+    <p>Paragraf kelima. di luar div.</p>
+    <p>Paragraf keenam. di luar div.</p>
+  </body>
+</html>
+
+<!-- Descendant Selector (space) -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Descendant Selector</title>
+    
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div>
+      <p>Paragraf pertama. di dalam div.</p>
+      <p>Paragraf kedua. di dalam div.</p>
+      <section>
+        <p>
+          Paragraf ketiga. di dalam div Namun, bukan sebagai anak elemen secara
+          langsung.
+        </p>
+      </section>
+      <p>Paragraf keempat. di dalam div.</p>
+    </div>
+    <p>Paragraf kelima. di luar div.</p>
+    <p>Paragraf keenam. di luar div.</p>
+  </body>
+</html>
+
+<!-- Pseudo-class Selector -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Pseudo Class Selector</title>
+    
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <p>
+      Dapatkan pekerjaan impian di 
+      <a target="_blank" href="https://jobs.dicoding.com/">
+        Dicoding Jobs
+      </a>.
+    </p>
+  </body>
+</html>
+
+<!-- Pseudo-elemen Selector -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Pseudo Element Selector</title>
+    
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <blockquote>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eius error
+      explicabo ipsum molestiae necessitatibus nesciunt possimus reprehenderit sed
+      voluptates. Aliquam aspernatur autem est nobis officia praesentium quas
+      recusandae rem.
+    </blockquote>
+  </body>
+</html>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Pseudo Element Selector</title>
+    
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto
+      deserunt, dicta laudantium quae quam sequi soluta vitae! A, architecto
+      beatae, consequuntur et eveniet fuga laudantium molestias praesentium
+      temporibus, unde velit.
+    </p>
+  </body>
+</html>
+
+<!-- Font-family -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Judul Dokumen</title>
+    
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="jumbotron">
+        <h1>Bandung</h1>
+        <p>
+          Kota metropolitan terbesar di Provinsi Jawa Barat, sekaligus menjadi ibu kota provinsi
+          tersebut.
+        </p>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="#">Sejarah</a></li>
+          <li><a href="#">Geografis</a></li>
+          <li><a href="#">Wisata</a></li>
+        </ul>
+      </nav>
+    </header>
+  </body>
+</html>
+
+<!-- Font-size -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Judul Dokumen</title>
+    
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Bandung</h1>
+  </body>
+</html>
+
+<!-- Font-weight -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Judul Dokumen</title>
+    
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <p>
+      <span class="normal">normal</span> | <span class="bold">bold</span> |
+      <span class="bolder">bolder</span> | <span class="lighter">lighter</span> |
+      <span class="fw100">fw100</span> | <span class="fw200">fw200</span> |
+      <span class="fw300">fw300</span> | <span class="fw400">fw400</span> |
+      <span class="fw500">fw500</span> | <span class="fw600">fw600</span> |
+      <span class="fw700">fw700</span> | <span class="fw800">fw800</span> |
+      <span class="fw900">fw900</span>
+    </p>
+  </body>
+</html>
+
+<!-- Font-style -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Judul Dokumen</title>
+    
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <p>
+      <span class="normal">normal</span> | <span class="italic">italic</span> |
+      <span class="oblique">oblique</span>
+    </p>
+  </body>
+</html>
+
+<!-- Font-variant -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Judul Dokumen</title>
+ 
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1>Ini Merupakan Teks Dengan Huruf Kapital Kecil</h1>
+  </body>
+</html>
+
+<!-- Line Height -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Judul Dokumen</title>
+    
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <p class="ln2">
+      Properti line-height digunakan untuk mengatur jarak minimal teks pada garis dasar ke garis
+      dalam menampilkannya pada halaman web.
+    </p>
+    <p class="ln200">
+      Properti line-height digunakan untuk mengatur jarak minimal teks pada garis dasar ke garis
+      dalam menampilkannya pada halaman web.
+    </p>
+    <p class="ln2em">
+      Properti line-height digunakan untuk mengatur jarak minimal teks pada garis dasar ke garis
+      dalam menampilkannya pada halaman web.
+    </p>
+  </body>
+</html>
+
+<!-- Text Alignment -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Judul Dokumen</title>
+    
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <p class="tl-left">
+        text-align menetapkan peletakkan secara horizontal terhadap konten/elemen yang bersifat
+        inline yang berada dalam elemen block.
+      </p>
+
+      <p class="tl-right">
+        text-align menetapkan peletakkan secara horizontal terhadap konten/elemen yang bersifat
+        inline yang berada dalam elemen block.
+      </p>
+
+      <p class="tl-center">
+        text-align menetapkan peletakkan secara horizontal terhadap konten/elemen yang bersifat
+        inline yang berada dalam elemen block.
+      </p>
+
+      <p class="tl-justify">
+        text-align menetapkan peletakkan secara horizontal terhadap konten/elemen yang bersifat
+        inline yang berada dalam elemen block.
+      </p>
+    </main>
+  </body>
+</html>
+
+<!-- Text Decoration -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Judul Dokumen</title>
+    
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <p>
+        <a href="#">Teks pada elemen anchor biasa</a>
+      </p>
+
+      <p>
+        <a href="#" class="decoration-none">
+          Teks pada elemen anchor biasa yang menerapkan text-decoration: none
+        </a>
+      </p>
+    </main>
+  </body>
+</html>
+
+<!-- Text Transform -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Judul Dokumen</title>
+    
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <p class="transform-none">Text transform digunakan untuk mengatur kapitalisasi pada teks.</p>
+
+      <p class="transform-capitalize">
+        Text transform digunakan untuk mengatur kapitalisasi pada teks.
+      </p>
+
+      <p class="transform-lowercase">
+        Text transform digunakan untuk mengatur kapitalisasi pada teks.
+      </p>
+
+      <p class="transform-uppercase">
+        Text transform digunakan untuk mengatur kapitalisasi pada teks.
+      </p>
+    </main>
+  </body>
+</html>
+
+<!-- Word and Letter Spacing -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Judul Dokumen</title>
+    
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <p class="letter-spacing">Bandung, Kota metropolitan terbesar di Provinsi Jawa Barat.</p>
+      <p class="word-spacing">Bandung, Kota metropolitan terbesar di Provinsi Jawa Barat.</p>
+    </main>
+  </body>
+</html>
+
+<!-- Text Shadow -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Judul Dokumen</title>
+    
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <p class="one">Bandung, Kota metropolitan terbesar di Provinsi Jawa Barat.</p>
+
+      <p class="two">Bandung, Kota metropolitan terbesar di Provinsi Jawa Barat.</p>
+
+      <p class="three">Bandung, Kota metropolitan terbesar di Provinsi Jawa Barat.</p>
+
+      <p class="four">Bandung, Kota metropolitan terbesar di Provinsi Jawa Barat.</p>
+    </main>
+  </body>
+</html>
+
+
+
+
+
+
+
+
